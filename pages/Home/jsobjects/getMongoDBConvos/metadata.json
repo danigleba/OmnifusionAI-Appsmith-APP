@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getMongoDBConvos",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_getMongoDBConvos",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6613a7927ad490299614e0a1"
+}

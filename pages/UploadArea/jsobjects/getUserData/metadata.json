@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getUserData",
+    "pageId": "UploadArea",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "UploadArea_getUserData",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660fa71be5e3c162a5735179"
+}

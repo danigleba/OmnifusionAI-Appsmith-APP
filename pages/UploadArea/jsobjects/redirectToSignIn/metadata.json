@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "redirectToSignIn",
+    "pageId": "UploadArea",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "UploadArea_redirectToSignIn",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660e673baac59c515aef9052"
+}

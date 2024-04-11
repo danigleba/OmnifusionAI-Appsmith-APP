@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "checkOnboardingFilled",
+    "pageId": "Onboarding - Regular Bot",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Onboarding - Regular Bot_checkOnboardingFilled",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6616536596afb80abba10416"
+}

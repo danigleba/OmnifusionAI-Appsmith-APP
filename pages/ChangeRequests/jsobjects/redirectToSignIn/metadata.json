@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "redirectToSignIn",
+    "pageId": "ChangeRequests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "ChangeRequests_redirectToSignIn",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660e6c0e36b27f51bb0b6eca"
+}

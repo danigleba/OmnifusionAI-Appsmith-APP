@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "signOut",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_signOut",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660d2421fa3b2a2ca3cc9e32"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getManychatData",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_getManychatData",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_661279e48e35bc60b026b685"
+}

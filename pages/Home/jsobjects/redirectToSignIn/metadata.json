@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "redirectToSignIn",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_redirectToSignIn",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660d24760df6eb2bdf9b076c"
+}

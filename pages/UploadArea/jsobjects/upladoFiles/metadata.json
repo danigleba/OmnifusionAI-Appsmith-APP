@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "upladoFiles",
+    "pageId": "UploadArea",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "UploadArea_upladoFiles",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6612780dfd162757345f840a"
+}

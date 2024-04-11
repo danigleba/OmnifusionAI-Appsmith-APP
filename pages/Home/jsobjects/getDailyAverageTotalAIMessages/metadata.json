@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getDailyAverageTotalAIMessages",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_getDailyAverageTotalAIMessages",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6617ad8701012464a0e8d004"
+}

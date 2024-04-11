@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "productAccordoin",
+    "pageId": "Onboarding - Regular Bot",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "value",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Onboarding - Regular Bot_productAccordoin",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6616536596afb80abba10408"
+}

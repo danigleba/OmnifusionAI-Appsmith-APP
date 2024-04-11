@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getUserData",
+    "pageId": "ChangeRequests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "ChangeRequests_getUserData",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660fa756e5e3c162a573517d"
+}

@@ -1,0 +1,146 @@
+{
+  "unpublishedPage": {
+    "name": "Home",
+    "slug": "home",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1010,
+          "containerStyle": "none",
+          "snapRows": 51,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 530,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_getManychatData.getData",
+              "name": "getManychatData.getData",
+              "collectionId": "Home_getManychatData",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  get_manychat_data.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_get_mongodb_collection",
+              "name": "get_mongodb_collection",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_redirectToSignIn.redirectToSignIn",
+              "name": "redirectToSignIn.redirectToSignIn",
+              "collectionId": "Home_redirectToSignIn",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  if (appsmith.store.email) return;\n  navigateTo(\"SignIn\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_getDailyAverageLeadsResponded.calculateAverageDailyChange",
+              "name": "getDailyAverageLeadsResponded.calculateAverageDailyChange",
+              "collectionId": "Home_getDailyAverageLeadsResponded",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).leadsResponded;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageLeadsResponded\", averageChange);\n  return averageChange;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getDailyAverageTotalAIMessages.calculateAverageDailyChange",
+              "name": "getDailyAverageTotalAIMessages.calculateAverageDailyChange",
+              "collectionId": "Home_getDailyAverageTotalAIMessages",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).totalAIMessages;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageTotalAIMessages\", averageChange);\n  return averageChange;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getMongoDBConvos.numberOfAIMessages",
+              "name": "getMongoDBConvos.numberOfAIMessages",
+              "collectionId": "Home_getMongoDBConvos",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  function countAIMessages(messages) {\n    let aiMessageCount = 0;\n    for (const message of messages) {\n      if (message.type === 'ai') {\n        aiMessageCount++;\n      }\n    }\n    return aiMessageCount;\n  }\n  function sumAIInAllObjects(data) {\n    let totalAIMessages = 0;\n    for (const obj of data) {\n      totalAIMessages += countAIMessages(obj.messages);\n    }\n    return totalAIMessages;\n  }\n  const totalAIMessages = sumAIInAllObjects(get_mongodb_collection.data);\n  storeValue(\"numberOfAIMessages\", totalAIMessages);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getMongoDBConvos.numberOfConvos",
+              "name": "getMongoDBConvos.numberOfConvos",
+              "collectionId": "Home_getMongoDBConvos",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await get_mongodb_collection.run();\n  storeValue(\"numberOfConvos\", get_mongodb_collection.data.length);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getUserData.getData",
+              "name": "getUserData.getData",
+              "collectionId": "Home_getUserData",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await get_all_users.run();\n  await storeValue(\"userData\", get_all_users.data.find(obj => obj.email === appsmith.store.email));\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingCompleted == true) return;\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingType == \"Regular\") navigateTo(\"Onboarding - Regular Bot\"); else navigateTo(\"Onboarding - Appointment sette\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660d2398124aff71be0ea814"
+}

@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "onboardingFilled",
+    "pageId": "Onboarding - Appointment sette",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "onboardingFilled",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Onboarding - Appointment sette_onboardingFilled",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660fca0c82c4715604801467"
+}

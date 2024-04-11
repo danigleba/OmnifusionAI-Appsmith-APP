@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "productAccordoin",
+    "pageId": "Onboarding - Appointment sette",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "value",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Onboarding - Appointment sette_productAccordoin",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660d21daa63fb00f9b526cae"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "getUserData",
+    "pageId": "Account",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Account_getUserData",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660fa70a82c471560480132b"
+}

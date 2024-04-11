@@ -1,0 +1,64 @@
+{
+  "unpublishedCollection": {
+    "name": "explanations",
+    "pageId": "Onboarding - Regular Bot",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "personality",
+        "value": "false"
+      },
+      {
+        "name": "context",
+        "value": "false"
+      },
+      {
+        "name": "howToRespond",
+        "value": "false"
+      },
+      {
+        "name": "trigger",
+        "value": "false"
+      },
+      {
+        "name": "followUps",
+        "value": "false"
+      },
+      {
+        "name": "salesType",
+        "value": "false"
+      },
+      {
+        "name": "objections",
+        "value": "false"
+      },
+      {
+        "name": "shortProductDescription",
+        "value": "false"
+      },
+      {
+        "name": "links",
+        "value": "false"
+      },
+      {
+        "name": "manychatAcces",
+        "value": "false"
+      },
+      {
+        "name": "googleCalendarAccess",
+        "value": "false"
+      },
+      {
+        "name": "timeZone",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Onboarding - Regular Bot_explanations",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_6616536596afb80abba1041c"
+}

@@ -1,0 +1,18 @@
+{{
+	{
+		"email": appsmith.store.email,
+		"manychatInvitationLink": manychatInvitationLink.text,
+		"personality": personality.text,
+		"context": context.text,
+		"howToRespond": howToRespond.text,
+		"startingPoints": startingPoints.text,
+		"followUps": followUps.text,
+		"SalesType": SalesType.type,
+		"steps_script": steps_script.text,
+		"objections": objections.text,
+		"shortProductDescription": shortProductDescription.text,
+		"links": links.text,
+		"files": filePicker.files,
+		"extraNotes": extraNotes.text
+	}
+}}

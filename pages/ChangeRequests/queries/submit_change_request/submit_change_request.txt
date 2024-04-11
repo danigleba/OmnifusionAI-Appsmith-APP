@@ -1,0 +1,6 @@
+{{
+	{
+		"change_request": change_request.text,
+		"email": appsmith.store.email
+	}
+}}

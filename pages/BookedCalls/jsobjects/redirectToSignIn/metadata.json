@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "redirectToSignIn",
+    "pageId": "BookedCalls",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "BookedCalls_redirectToSignIn",
+  "deleted": false,
+  "gitSyncId": "66053ad892512e6f280a4a6d_660e6948275a2f52cccb1218"
+}

@@ -1,0 +1,6 @@
+{{
+	{
+		"email": email.text,
+		"onboardingType": appsmith.URL.queryParams.onboardingType,
+	}
+}}
