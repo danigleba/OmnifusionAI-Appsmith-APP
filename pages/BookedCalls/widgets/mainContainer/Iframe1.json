@@ -11,7 +11,7 @@
     "topRow": 5,
     "bottomRow": 54,
     "parentRowSpace": 10,
-    "source": "https://calendar.google.com/calendar/embed?src=c_534a0e049a913f40d39dd9d61842d05ed96e8f377f613a536481bce226cbd6a0%40group.calendar.google.com&ctz=America%2FChicago",
+    "source": "{{appsmith.store.userData.googleCalendarLink}}",
     "type": "IFRAME_WIDGET",
     "title": "",
     "hideCard": false,
@@ -22,7 +22,10 @@
     "parentColumnSpace": 14.26171875,
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "isVisible"}],
+    "dynamicBindingPathList": [
+        {"key": "isVisible"},
+        {"key": "source"}
+    ],
     "borderWidth": 1,
     "flexVerticalAlignment": "start",
     "key": "224enonx9s",

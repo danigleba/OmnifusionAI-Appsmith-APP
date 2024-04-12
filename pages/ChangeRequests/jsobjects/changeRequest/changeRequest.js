@@ -1,6 +1,6 @@
 export default {
 	async submitNewRequest () {
-			if (get_change_requests.data.filter(request => request.property_date.includes("April")).length < 3) {
+			if (get_change_requests.data.filter(request => request.property_date.includes("April") && request.name == appsmith.store.email).length < 3) {
 				await submit_change_request.run()
 				navigateTo(appsmith.URL.fullPath)
 			} else showAlert("You've already spend all your requests this month")

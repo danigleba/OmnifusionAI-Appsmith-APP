@@ -183,7 +183,7 @@
             ],
             "key": "s1ub3uio6s",
             "isDeprecated": false,
-            "tabName": "AI message sent",
+            "tabName": "AI messages sent",
             "rightColumn": 892.75,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -221,7 +221,7 @@
             "widgetId": "mgltxilze7",
             "index": 3,
             "id": "tabvn2y1pvoxd",
-            "label": "AI message sent",
+            "label": "AI messages sent",
             "isVisible": true
         },
         "tabenzkc038ti": {

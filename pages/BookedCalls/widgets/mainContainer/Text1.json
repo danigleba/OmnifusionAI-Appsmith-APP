@@ -30,7 +30,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Calendar is only available for \"Appointment Setter w/ Google Calendar \" users.",
+    "text": "The calendar is only available for \"Conversational Appointment Booking\" users.",
     "key": "khbqdtgfwm",
     "isDeprecated": false,
     "rightColumn": 64,

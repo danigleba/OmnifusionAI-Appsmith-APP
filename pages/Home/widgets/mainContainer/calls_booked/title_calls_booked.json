@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Calls booked",
+    "text": "Calls Booked",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 59,

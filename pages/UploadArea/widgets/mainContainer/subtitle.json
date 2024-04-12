@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Upload any files to give us acces to them",
+    "text": "Upload any files we may need.",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 53,

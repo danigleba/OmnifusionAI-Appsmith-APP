@@ -25,7 +25,43 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Onboarding - Regular Bot_get_all_users",
+              "name": "get_all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Onboarding - Regular Bot_redirectToSignIn.redirectToSignIn",
+              "name": "redirectToSignIn.redirectToSignIn",
+              "collectionId": "Onboarding - Regular Bot_redirectToSignIn",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  if (appsmith.store.email) return;\n  navigateTo(\"SignIn\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Onboarding - Regular Bot_getUserData.getData",
+              "name": "getUserData.getData",
+              "collectionId": "Onboarding - Regular Bot_getUserData",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await get_all_users.run();\n  await storeValue(\"userData\", get_all_users.data.find(obj => obj.email === appsmith.store.email));\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingCompleted == true) navigateTo(\"Home\");\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).manychatInvitationLink) onboardingFilled.onboardingFilled = true;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Onboarding - Regular Bot",

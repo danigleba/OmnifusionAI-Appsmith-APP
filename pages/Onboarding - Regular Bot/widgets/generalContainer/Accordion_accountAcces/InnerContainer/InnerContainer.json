@@ -61,7 +61,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 36,
+    "originalBottomRow": 34,
     "needsErrorInfo": false,
     "mobileBottomRow": 16,
     "widgetName": "InnerContainer",
@@ -91,7 +91,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 6,
     "responsiveBehavior": "fill",
-    "originalTopRow": 9,
+    "originalTopRow": 7,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 10
