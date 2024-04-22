@@ -56,7 +56,7 @@
     "flexVerticalAlignment": "stretch",
     "dynamicHeight": "FIXED",
     "bottomRowBeforeCollapse": 96,
-    "isVisible": "{{appsmith.store.userData.onboardingCompleted == true}}",
+    "isVisible": "{{appsmith.store.userData.onboarding.onboardingCompleted == true}}",
     "version": 1,
     "tags": ["Layout"],
     "isLoading": false,

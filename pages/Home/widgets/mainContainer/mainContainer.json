@@ -80,7 +80,7 @@
     "widgetId": "y8fmk3de6n",
     "containerStyle": "card",
     "minWidth": 450,
-    "isVisible": "{{appsmith.store.userData.onboardingCompleted == true}}",
+    "isVisible": "{{appsmith.store.userData.onboarding.onboardingCompleted == true}}",
     "version": 1,
     "parentId": "0",
     "tags": ["Layout"],
@@ -92,6 +92,6 @@
     "borderRadius": "0px",
     "mobileLeftColumn": 14,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 101,
+    "originalBottomRow": 98,
     "minDynamicHeight": 10
 }
