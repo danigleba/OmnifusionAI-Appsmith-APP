@@ -100,7 +100,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).totalAIMessages;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageTotalAIMessages\", averageChange);\n  return averageChange;\n}"
+                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).statistics.totalAIMessages;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageTotalAIMessages\", averageChange);\n  return averageChange;\n}"
               ],
               "timeoutInMillisecond": 10000
             },
