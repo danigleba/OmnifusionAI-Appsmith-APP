@@ -28,10 +28,11 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Onboarding - Appointment sette_get_all_users",
-              "name": "get_all_users",
+              "id": "Onboarding - Appointment sette_getUserData.getData",
+              "name": "getUserData.getData",
+              "collectionId": "Onboarding - Appointment sette_getUserData",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
@@ -42,22 +43,7 @@
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "function () {\n  if (appsmith.store.email) return;\n  navigateTo(\"SignIn\");\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Onboarding - Appointment sette_getUserData.getData",
-              "name": "getUserData.getData",
-              "collectionId": "Onboarding - Appointment sette_getUserData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await get_all_users.run();\n  await storeValue(\"userData\", get_all_users.data.find(obj => obj.email === appsmith.store.email));\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingCompleted == true) navigateTo(\"Home\");\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).manychatInvitationLink) onboardingFilled.onboardingFilled = true;\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

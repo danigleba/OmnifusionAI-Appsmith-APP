@@ -29,7 +29,7 @@
       "httpMethod": "GET",
       "selfReferencingDataPaths": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],

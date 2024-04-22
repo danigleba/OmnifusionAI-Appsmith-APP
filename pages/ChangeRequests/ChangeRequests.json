@@ -28,18 +28,20 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "ChangeRequests_get_all_users",
-              "name": "get_all_users",
+              "id": "ChangeRequests_changeRequest.getAllRequests",
+              "name": "changeRequest.getAllRequests",
+              "collectionId": "ChangeRequests_changeRequest",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "ChangeRequests_get_change_requests",
-              "name": "get_change_requests",
+              "id": "ChangeRequests_getUserData.getData",
+              "name": "getUserData.getData",
+              "collectionId": "ChangeRequests_getUserData",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
+              "pluginType": "JS",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
@@ -50,33 +52,7 @@
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "function () {\n  if (appsmith.store.email) return;\n  navigateTo(\"SignIn\");\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "ChangeRequests_changeRequest.getAllRequests",
-              "name": "changeRequest.getAllRequests",
-              "collectionId": "ChangeRequests_changeRequest",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await get_change_requests.run();\n  const previusChangeRequest = [];\n  get_change_requests.data.forEach(object => {\n    if (object.name == appsmith.store.email) {\n      previusChangeRequest.push(`· ${object.property_date} -  ${object.property_status}`);\n    }\n  });\n  storeValue(\"changeRequests\", previusChangeRequest);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "ChangeRequests_getUserData.getData",
-              "name": "getUserData.getData",
-              "collectionId": "ChangeRequests_getUserData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await get_all_users.run();\n  await storeValue(\"userData\", get_all_users.data.find(obj => obj.email === appsmith.store.email));\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingCompleted == true) return;\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboardingType == \"Regular\") navigateTo(\"Onboarding - Regular Bot\"); else navigateTo(\"Onboarding - Appointment sette\");\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
