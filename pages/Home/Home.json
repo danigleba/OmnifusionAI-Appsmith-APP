@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1110,
+          "bottomRow": 980,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -78,7 +78,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).leadsResponded;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageLeadsResponded\", averageChange);\n  return averageChange;\n}"
+                "async function () {\n  let totalChange = 0;\n  await get_all_users.run();\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).statistics.leadsResponded;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageLeadsResponded\", averageChange);\n  return averageChange;\n}"
               ],
               "timeoutInMillisecond": 10000
             },

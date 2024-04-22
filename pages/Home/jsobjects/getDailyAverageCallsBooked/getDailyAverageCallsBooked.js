@@ -1,7 +1,7 @@
 export default {
 	async calculateAverageDailyChange() {
 		let totalChange = 0;
-		const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).onboarding.callsBooked
+		const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).statistics.callsBooked
 		// Iterate over the array starting from the second element
 		for (let i = 1; i < data.length; i++) {
 			// Calculate the difference between consecutive days
