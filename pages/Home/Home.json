@@ -72,6 +72,17 @@
           ],
           [
             {
+              "id": "Home_getDailyAverageCallsBooked.calculateAverageDailyChange",
+              "name": "getDailyAverageCallsBooked.calculateAverageDailyChange",
+              "collectionId": "Home_getDailyAverageCallsBooked",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  let totalChange = 0;\n  const data = get_all_users.data.find(obj => obj.email === appsmith.store.email).statistics.callsBooked;\n  for (let i = 1; i < data.length; i++) {\n    const change = data[i].y - data[i - 1].y;\n    totalChange += change;\n  }\n  const averageChange = totalChange / (data.length - 1);\n  storeValue(\"dailyAverageCallsBooked\", averageChange);\n  return averageChange;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Home_getDailyAverageLeadsResponded.calculateAverageDailyChange",
               "name": "getDailyAverageLeadsResponded.calculateAverageDailyChange",
               "collectionId": "Home_getDailyAverageLeadsResponded",
