@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{appsmith.store.userData.callsBooked[appsmith.store.userData.callsBooked.length - 1].y || 0}}",
+    "text": "{{appsmith.store.userData.statistics.callsBooked[appsmith.store.userData.statistics.callsBooked.length - 1].y || 0}}",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 64,
@@ -54,7 +54,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 11,
+    "originalBottomRow": 8,
     "fontSize": "3rem",
     "minDynamicHeight": 4
 }

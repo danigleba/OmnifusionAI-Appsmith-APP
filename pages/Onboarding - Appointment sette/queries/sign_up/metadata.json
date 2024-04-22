@@ -40,7 +40,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\t{\n\t\t\"email\": `${appsmith.store.email}`,\n\t\t\"manychatInvitationLink\": manychatInvitationLink.text,\n\t\t\"googleCalendarLink\": googleCalendarLink.text,\n\t\t\"timeZone\": timeZone.text,\n\t\t\"personality\": personality.text,\n\t\t\"context\": context.text,\n\t\t\"howToRespond\": howToRespond.text,\n\t\t\"startingPoints\": startingPoints.text,\n\t\t\"followUps\": followUps.text,\n\t\t\"SalesType\": SalesType.type,\n\t\t\"steps_script\": steps_script.text,\n\t\t\"objections\": objections.text,\n\t\t\"shortProductDescription\": shortProductDescription.text,\n\t\t\"links\": links.text,\n\t\t\"files\": filePicker.files,\n\t\t\"extraNotes\": extraNotes.text\n\t}\n}}",
+      "body": "{{\n\t{\n\t\t\"email\": `${appsmith.store.email}`,\n\t\t\"manychatInvitationLink\": manychatInvitationLink.text,\n\t\t\"googleCalendarLink\": googleCalendarLink.text,\n\t\t\"timeZone\": timeZone.text,\n\t\t\"personality\": personality.text,\n\t\t\"context\": context.text,\n\t\t\"howToRespond\": howToRespond.text,\n\t\t\"startingPoints\": startingPoints.text,\n\t\t\"followUps\": followUps.text,\n\t\t\"salesType\": SalesType.type,\n\t\t\"steps_script\": steps_script.text,\n\t\t\"objections\": objections.text,\n\t\t\"shortProductDescription\": shortProductDescription.text,\n\t\t\"links\": links.text,\n\t\t\"files\": filePicker.files,\n\t\t\"extraNotes\": extraNotes.text\n\t}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
@@ -64,7 +64,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n\t{\n\t\t\"email\": `${appsmith.store.email}`,\n\t\t\"manychatInvitationLink\": manychatInvitationLink.text,\n\t\t\"googleCalendarLink\": googleCalendarLink.text,\n\t\t\"timeZone\": timeZone.text,\n\t\t\"personality\": personality.text,\n\t\t\"context\": context.text,\n\t\t\"howToRespond\": howToRespond.text,\n\t\t\"startingPoints\": startingPoints.text,\n\t\t\"followUps\": followUps.text,\n\t\t\"SalesType\": SalesType.type,\n\t\t\"steps_script\": steps_script.text,\n\t\t\"objections\": objections.text,\n\t\t\"shortProductDescription\": shortProductDescription.text,\n\t\t\"links\": links.text,\n\t\t\"files\": filePicker.files,\n\t\t\"extraNotes\": extraNotes.text\n\t}\n"
+      "\n\t{\n\t\t\"email\": `${appsmith.store.email}`,\n\t\t\"manychatInvitationLink\": manychatInvitationLink.text,\n\t\t\"googleCalendarLink\": googleCalendarLink.text,\n\t\t\"timeZone\": timeZone.text,\n\t\t\"personality\": personality.text,\n\t\t\"context\": context.text,\n\t\t\"howToRespond\": howToRespond.text,\n\t\t\"startingPoints\": startingPoints.text,\n\t\t\"followUps\": followUps.text,\n\t\t\"salesType\": SalesType.type,\n\t\t\"steps_script\": steps_script.text,\n\t\t\"objections\": objections.text,\n\t\t\"shortProductDescription\": shortProductDescription.text,\n\t\t\"links\": links.text,\n\t\t\"files\": filePicker.files,\n\t\t\"extraNotes\": extraNotes.text\n\t}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

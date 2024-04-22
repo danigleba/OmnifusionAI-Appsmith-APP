@@ -19,7 +19,7 @@
     "hideCard": false,
     "mobileRightColumn": 28,
     "chartData": {"6go5rv5vhx": {
-        "data": "{{appsmith.store.userData[\"CONTACT - MESSAGES TOTAL\"]}}",
+        "data": "{{appsmith.store.userData.statistics[\"CONTACT - MESSAGES TOTAL\"]}}",
         "seriesName": ""
     }},
     "animateLoading": true,

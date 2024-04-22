@@ -19,7 +19,7 @@
     "hideCard": false,
     "mobileRightColumn": 28,
     "chartData": {"6go5rv5vhx": {
-        "data": "{{appsmith.store.userData.totalAIMessages}}",
+        "data": "{{appsmith.store.userData.statistics.totalAIMessages}}",
         "seriesName": ""
     }},
     "animateLoading": true,

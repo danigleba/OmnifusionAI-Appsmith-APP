@@ -28,11 +28,10 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Onboarding - Regular Bot_getUserData.getData",
-              "name": "getUserData.getData",
-              "collectionId": "Onboarding - Regular Bot_getUserData",
+              "id": "Onboarding - Regular Bot_get_all_users",
+              "name": "get_all_users",
               "confirmBeforeExecute": false,
-              "pluginType": "JS",
+              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
@@ -43,7 +42,22 @@
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "function () {\n  if (appsmith.store.email) return;\n  navigateTo(\"SignIn\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Onboarding - Regular Bot_getUserData.getData",
+              "name": "getUserData.getData",
+              "collectionId": "Onboarding - Regular Bot_getUserData",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await get_all_users.run();\n  await storeValue(\"userData\", get_all_users.data.find(obj => obj.email === appsmith.store.email));\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboarding.onboardingCompleted == true) navigateTo(\"Home\");\n  if (get_all_users.data.find(obj => obj.email === appsmith.store.email).onboarding.manychatInvitationLink) onboardingFilled.onboardingFilled = true;\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

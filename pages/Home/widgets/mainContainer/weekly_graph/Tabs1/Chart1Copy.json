@@ -19,7 +19,7 @@
     "hideCard": false,
     "mobileRightColumn": 28,
     "chartData": {"6go5rv5vhx": {
-        "data": "{{appsmith.store.userData.leadsResponded}}",
+        "data": "{{appsmith.store.userData.statistics.leadsResponded}}",
         "seriesName": ""
     }},
     "animateLoading": true,

@@ -9,7 +9,7 @@
 		"howToRespond": howToRespond.text,
 		"startingPoints": startingPoints.text,
 		"followUps": followUps.text,
-		"SalesType": SalesType.type,
+		"salesType": SalesType.type,
 		"steps_script": steps_script.text,
 		"objections": objections.text,
 		"shortProductDescription": shortProductDescription.text,

@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{appsmith.store.userData[\"CONTACT - MESSAGES TOTAL\"][appsmith.store.userData[\"CONTACT - MESSAGES TOTAL\"].length-1].y}}",
+    "text": "{{appsmith.store.userData.statistics[\"CONTACT - MESSAGES TOTAL\"][appsmith.store.userData.statistics[\"CONTACT - MESSAGES TOTAL\"].length-1].y}}",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 61,
@@ -54,7 +54,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 11,
+    "originalBottomRow": 8,
     "fontSize": "3rem",
     "minDynamicHeight": 4
 }
