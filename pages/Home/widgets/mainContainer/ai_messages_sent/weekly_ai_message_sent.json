@@ -27,7 +27,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Daily Average: {{appsmith.store.dailyAverageTotalAIMessages || \"Not enough data\"}}",
+    "text": "Daily Average: {{appsmith.store.dailyAverageTotalAIMessages.toFixed(2) || \"Not enough data\"}}",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 59,
