@@ -44,7 +44,9 @@
               "name": "get_mongodb_collection",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.userData.TAGNAME"
+              ],
               "timeoutInMillisecond": 10000
             },
             {

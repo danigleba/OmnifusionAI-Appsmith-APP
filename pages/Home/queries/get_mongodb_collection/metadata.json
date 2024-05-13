@@ -28,7 +28,7 @@
       "queryParameters": [
         {
           "key": "collection",
-          "value": "ElliottTomlinson"
+          "value": "{{appsmith.store.userData.TAGNAME}}"
         }
       ],
       "body": "",
@@ -46,11 +46,20 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.userData.TAGNAME"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
