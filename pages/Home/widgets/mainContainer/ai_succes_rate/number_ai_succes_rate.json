@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{ (appsmith.store.userData.TAGNAME != \"Treatwell\" && appsmith.store.userData.TAGNAME != \"Treatwell_NL\" && appsmith.store.userData.TAGNAME != \"RelaxEstate\") ? `${(100 * appsmith.store.userData.statistics.callsBooked[appsmith.store.userData.statistics.callsBooked.length - 1].y / appsmith.store.userData.statistics.leadsResponded[appsmith.store.userData.statistics.leadsResponded.length -1].y).toFixed(2)}%` : \"n/a\"}}",
+    "text": "{{ (appsmith.store.userData.TAGNAME != \"Treatwell\" && appsmith.store.userData.TAGNAME != \"Treatwell_NL\" && appsmith.store.userData.TAGNAME != \"RelaxEstate\" && appsmith.store.userData.TAGNAME != \"TreatwellDACH\") ? `${(100 * appsmith.store.userData.statistics.callsBooked[appsmith.store.userData.statistics.callsBooked.length - 1].y / appsmith.store.userData.statistics.leadsResponded[appsmith.store.userData.statistics.leadsResponded.length -1].y).toFixed(2)}%` : \"n/a\"}}",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 59,

@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{(appsmith.store.userData.TAGNAME != \"Treatwell\" && appsmith.store.userData.TAGNAME != \"Treatwell_NL\" && appsmith.store.userData.TAGNAME != \"RelaxEstate\") ? appsmith.store.userData.statistics.callsBooked[appsmith.store.userData.statistics.callsBooked.length - 1].y : \"n/a\"}}",
+    "text": "{{(appsmith.store.userData.TAGNAME != \"Treatwell\" && appsmith.store.userData.TAGNAME != \"Treatwell_NL\" && appsmith.store.userData.TAGNAME != \"RelaxEstate\" && appsmith.store.userData.TAGNAME != \"TreatwellDACH\") ? appsmith.store.userData.statistics.callsBooked[appsmith.store.userData.statistics.callsBooked.length - 1].y : \"n/a\"}}",
     "key": "qsqoarwfay",
     "isDeprecated": false,
     "rightColumn": 64,
